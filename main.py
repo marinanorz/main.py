@@ -1,27 +1,25 @@
 def name_age(name, age):
     print("Hello", name,". Your age is:", age)
-    return " "
+    name = input("Enter your name:")
+    age = input("Enter your age:")
+    return input(name + age)
 
-x = name_age("Marina", 19)
-print(x)
-
-
-string1 = "Marina"
-z = 19
-concatString = string1 + str(z)
-print(concatString)
+name_age("Marina", 19)
 
 
-def swap_integers(X,Y):
+def swap_integers(X, Y):
+    print(X)
+    print(Y)
     temp = X
     X = Y
     Y = temp
-    print("After swapping numbers", (X, Y))
-num1 = input("Please Enter the first number:")
-num2 = input("Please enter the second number:")
-print("Before swapping numbers", (num1, num2))
-swap_integers(num1, num2)
-# habe die input function noch nicht richtig verstanden
+    print(X)
+    print(Y)
+    return str(X) + str(Y)
+
+print(swap_integers(10, 22))
+
+
 
 def check_numbers(num1, num2):
     if (num1 % 6 == 0 or num2 % 6 == 0) and (num1 % 10 == 0 and num2 % 10 == 0):
@@ -52,7 +50,7 @@ def circle_area(r1, r2, r3):
     print("a2 =", a2)
     print("a3 =", a3)
     print("Area as combined integer =",a1 + a2 + a3)
-# ergebnis ist kein integer ?
+
 circle_area(1,2,3)
 
 
